@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+  <rect width="900" height="560" rx="30" fill="#FFFBEF"/>
+  <g font-family="Arial" font-weight="700" fill="#24324A">
+    <rect x="70" y="80" width="220" height="120" rx="24" fill="#FFFFFF" stroke="#FFD86B"/>
+    <text x="95" y="120" font-size="34">🙂 Enunciativa</text>
+    <text x="110" y="165" font-size="26">Hoy estudio.</text>
+
+    <rect x="340" y="80" width="220" height="120" rx="24" fill="#FFFFFF" stroke="#C7B4FF"/>
+    <text x="362" y="120" font-size="34">🤔 Interrogativa</text>
+    <text x="398" y="165" font-size="26">¿Dónde?</text>
+
+    <rect x="610" y="80" width="220" height="120" rx="24" fill="#FFFFFF" stroke="#FFB7CF"/>
+    <text x="638" y="120" font-size="34">😲 Exclamativa</text>
+    <text x="662" y="165" font-size="26">¡Qué lindo!</text>
+
+    <rect x="70" y="300" width="220" height="120" rx="24" fill="#FFFFFF" stroke="#9CDBA5"/>
+    <text x="96" y="340" font-size="34">👉 Imperativa</text>
+    <text x="113" y="385" font-size="26">Leé el cuento.</text>
+
+    <rect x="340" y="300" width="220" height="120" rx="24" fill="#FFFFFF" stroke="#A9D4FF"/>
+    <text x="368" y="340" font-size="34">☁️ Dubitativa</text>
+    <text x="386" y="385" font-size="26">Tal vez llueva.</text>
+
+    <rect x="610" y="300" width="220" height="120" rx="24" fill="#FFFFFF" stroke="#FFCF82"/>
+    <text x="638" y="340" font-size="34">🌟 Desiderativa</text>
+    <text x="640" y="385" font-size="26">Ojalá apruebe.</text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+  <rect width="900" height="560" rx="30" fill="#ECF7FF"/>
+  <text x="64" y="76" font-size="42" font-family="Arial" font-weight="700" fill="#24324A">Fábula: La tortuga y la liebre</text>
+  <ellipse cx="450" cy="430" rx="320" ry="68" fill="#CBE7B7"/>
+  <g>
+    <ellipse cx="254" cy="336" rx="62" ry="42" fill="#66A86D"/>
+    <circle cx="314" cy="324" r="26" fill="#66A86D"/>
+    <circle cx="320" cy="314" r="4" fill="#24324A"/>
+    <rect x="218" y="372" width="16" height="42" rx="8" fill="#66A86D"/>
+    <rect x="286" y="372" width="16" height="42" rx="8" fill="#66A86D"/>
+    <text x="198" y="462" font-size="28" font-family="Arial" font-weight="700" fill="#24324A">Tortuga</text>
+  </g>
+  <g>
+    <ellipse cx="624" cy="326" rx="64" ry="40" fill="#FFD0D8"/>
+    <circle cx="690" cy="312" r="24" fill="#FFD0D8"/>
+    <path d="M680 280l16-32 16 34" fill="#FFD0D8"/>
+    <path d="M702 282l16-32 16 34" fill="#FFD0D8"/>
+    <circle cx="694" cy="308" r="4" fill="#24324A"/>
+    <rect x="594" y="360" width="16" height="40" rx="8" fill="#FFD0D8"/>
+    <rect x="646" y="360" width="16" height="40" rx="8" fill="#FFD0D8"/>
+    <text x="588" y="462" font-size="28" font-family="Arial" font-weight="700" fill="#24324A">Liebre</text>
+  </g>
+  <polygon points="448,136 468,182 518,188 480,220 492,270 448,244 404,270 416,220 378,188 428,182" fill="#FFD86B"/>
+  <text x="394" y="220" font-size="18" font-family="Arial" font-weight="700" fill="#24324A">Moraleja</text>
+  <text x="244" y="124" font-size="26" font-family="Arial" font-weight="700" fill="#4F8CFF">La constancia vale mucho.</text>
+</svg>

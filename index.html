@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Viaje de Lengua - 4.º grado</title>
+  <title>Viaje al mundo de las palabras</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="hero" id="inicio">
-    <div class="cloud cloud-1">☁️</div>
-    <div class="cloud cloud-2">☁️</div>
-    <div class="hero-card">
-      <div class="book-mascot" aria-hidden="true">
-        <div class="book-face">📖</div>
-        <div class="sparkles">✨</div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="tag">Lengua · 4.º grado · Guía de estudio</p>
+        <h1>Viaje al mundo de las palabras</h1>
+        <p class="subtitle">
+          Una guía para estudiar jugando. Tiene explicaciones cortitas,
+          dibujos con ejemplos, mini desafíos y un repaso final para llegar con confianza al examen.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#mapa">Empezar</a>
+          <a class="btn secondary" href="#juegos">Ir a los juegos</a>
+        </div>
       </div>
-      <p class="tag">Lengua · 4.º grado · Guía de repaso</p>
-      <h1>Viaje al mundo de las palabras</h1>
-      <p class="subtitle">
-        Una guía clara, visual y divertida para estudiar comunicación, oraciones,
-        leyendas, fábulas, noticias, sustantivos y adjetivos.
-      </p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#mapa">Comenzar el viaje</a>
-        <a class="btn secondary" href="#juegos">Ir a los juegos</a>
+      <div class="hero-illustration card-illus">
+        <img src="assets/mascota.svg" alt="Mascota libro saludando" />
       </div>
     </div>
   </header>
@@ -42,279 +41,288 @@
 
   <main>
     <section id="mapa" class="section map-section">
-      <div class="section-title">
-        <span class="icon">🗺️</span>
+      <div class="section-heading">
+        <span class="emoji">🗺️</span>
         <div>
           <h2>Mapa del viaje</h2>
-          <p>Estudiá por estaciones. Cada estación tiene explicación, ejemplos y una mini práctica.</p>
+          <p>Podés estudiar por estaciones. En cada una vas a encontrar una idea principal, una imagen con ejemplo y una mini actividad.</p>
         </div>
       </div>
-
       <div class="journey-grid">
-        <a class="station" href="#comunicacion"><span>1</span><strong>Comunicación</strong><small>Mensaje, emisor y receptor</small></a>
-        <a class="station" href="#oraciones"><span>2</span><strong>Oraciones</strong><small>Qué quiere decir quien habla</small></a>
-        <a class="station" href="#leyenda"><span>3</span><strong>Leyenda</strong><small>Historias con magia y origen</small></a>
+        <a class="station" href="#comunicacion"><span>1</span><strong>Comunicación</strong><small>Quién dice qué</small></a>
+        <a class="station" href="#oraciones"><span>2</span><strong>Oraciones</strong><small>Informar, preguntar, ordenar...</small></a>
+        <a class="station" href="#leyenda"><span>3</span><strong>Leyenda</strong><small>Relatos con imaginación</small></a>
         <a class="station" href="#sustantivos"><span>4</span><strong>Sustantivos</strong><small>Palabras que nombran</small></a>
         <a class="station" href="#adjetivos"><span>5</span><strong>Adjetivos</strong><small>Palabras que describen</small></a>
-        <a class="station" href="#fabula"><span>6</span><strong>Fábula</strong><small>Relatos con moraleja</small></a>
-        <a class="station" href="#noticia"><span>7</span><strong>Noticia</strong><small>Información real</small></a>
-        <a class="station final" href="#juegos"><span>⭐</span><strong>Juegos</strong><small>Practicá y ganá confianza</small></a>
+        <a class="station" href="#fabula"><span>6</span><strong>Fábula</strong><small>Moraleja y animales</small></a>
+        <a class="station" href="#noticia"><span>7</span><strong>Noticia</strong><small>Hechos reales</small></a>
+        <a class="station final" href="#juegos"><span>⭐</span><strong>Juegos</strong><small>Repaso interactivo</small></a>
       </div>
     </section>
 
-    <section id="comunicacion" class="section blue">
-      <div class="section-title">
-        <span class="icon">💬</span>
+    <section id="comunicacion" class="section theme-blue">
+      <div class="section-heading">
+        <span class="emoji">💬</span>
         <div>
           <h2>Estación 1: La comunicación</h2>
-          <p>Comunicar es compartir un mensaje con otra persona.</p>
+          <p>Comunicar es compartir un mensaje.</p>
         </div>
       </div>
 
-      <div class="story-card">
-        <div class="kid">👧</div>
-        <div class="speech">Mamá, mañana tengo prueba de Lengua.</div>
-        <div class="kid">👩</div>
-      </div>
+      <div class="learn-grid">
+        <div class="text-card">
+          <h3>Idea importante</h3>
+          <p>En la comunicación siempre hay alguien que envía el mensaje y alguien que lo recibe.</p>
+          <div class="chips">
+            <span>Emisor</span><span>Receptor</span><span>Mensaje</span><span>Código</span><span>Canal</span><span>Contexto</span>
+          </div>
+          <div class="flip-grid">
+            <button class="flip-card" onclick="flipCard(this)"><span class="front">Emisor</span><span class="back">Quien envía el mensaje.</span></button>
+            <button class="flip-card" onclick="flipCard(this)"><span class="front">Receptor</span><span class="back">Quien recibe el mensaje.</span></button>
+            <button class="flip-card" onclick="flipCard(this)"><span class="front">Mensaje</span><span class="back">Lo que se quiere comunicar.</span></button>
+            <button class="flip-card" onclick="flipCard(this)"><span class="front">Código</span><span class="back">Idioma, gestos o señales.</span></button>
+            <button class="flip-card" onclick="flipCard(this)"><span class="front">Canal</span><span class="back">Voz, papel, celular.</span></button>
+            <button class="flip-card" onclick="flipCard(this)"><span class="front">Contexto</span><span class="back">La situación en que ocurre.</span></button>
+          </div>
+        </div>
 
-      <div class="flip-grid">
-        <button class="flip-card" onclick="flipCard(this)">
-          <span class="front">Emisor</span>
-          <span class="back">Quien envía el mensaje.</span>
-        </button>
-        <button class="flip-card" onclick="flipCard(this)">
-          <span class="front">Receptor</span>
-          <span class="back">Quien recibe el mensaje.</span>
-        </button>
-        <button class="flip-card" onclick="flipCard(this)">
-          <span class="front">Mensaje</span>
-          <span class="back">Lo que se comunica.</span>
-        </button>
-        <button class="flip-card" onclick="flipCard(this)">
-          <span class="front">Código</span>
-          <span class="back">Idioma, gesto, dibujo o señal.</span>
-        </button>
-        <button class="flip-card" onclick="flipCard(this)">
-          <span class="front">Canal</span>
-          <span class="back">El medio: voz, papel, celular, cartel.</span>
-        </button>
-        <button class="flip-card" onclick="flipCard(this)">
-          <span class="front">Contexto</span>
-          <span class="back">La situación en que ocurre.</span>
-        </button>
+        <div class="image-card">
+          <img src="assets/comunicacion.svg" alt="Ilustración de una niña hablando con su mamá" />
+          <button class="small-btn" onclick="toggleBox('ej-com')">Ver ejemplo de la imagen</button>
+          <div id="ej-com" class="info-box hidden">
+            <p><strong>Ejemplo:</strong> Martina le dice a su mamá: “Mañana tengo prueba de Lengua”.</p>
+            <p><strong>Emisor:</strong> Martina. <strong>Receptor:</strong> Mamá. <strong>Canal:</strong> la voz.</p>
+          </div>
+        </div>
       </div>
 
       <div class="two-columns">
         <article class="mini-card">
           <h3>Comunicación verbal</h3>
           <p>Usa palabras habladas o escritas.</p>
-          <div class="visual-big">🗣️ + ✏️</div>
-          <p><strong>Ejemplo:</strong> “Necesito mi cuaderno”.</p>
+          <div class="big-emoji">🗣️ ✏️</div>
+          <p><strong>Ejemplo:</strong> “Te presto mi libro”.</p>
         </article>
         <article class="mini-card">
           <h3>Comunicación no verbal</h3>
-          <p>Usa gestos, dibujos, sonidos, miradas o señales.</p>
-          <div class="visual-big">👋 + 🚦</div>
+          <p>Usa gestos, dibujos, sonidos o señales.</p>
+          <div class="big-emoji">👋 😀 🚦</div>
           <p><strong>Ejemplo:</strong> saludar con la mano.</p>
         </article>
       </div>
-
-      <div class="practice-box">
-        <h3>Mini práctica</h3>
-        <p>En “Sofía le manda un audio a su amiga”, ¿cuál es el canal?</p>
-        <button onclick="showSimpleAnswer('ans-com')">Ver respuesta</button>
-        <p id="ans-com" class="hidden answer-line">El canal es el celular o el audio.</p>
-      </div>
     </section>
 
-    <section id="oraciones" class="section yellow">
-      <div class="section-title">
-        <span class="icon">❓</span>
+    <section id="oraciones" class="section theme-yellow">
+      <div class="section-heading">
+        <span class="emoji">❓</span>
         <div>
           <h2>Estación 2: Oraciones según la actitud del hablante</h2>
-          <p>Para clasificar una oración, miramos qué intención tiene quien habla.</p>
+          <p>Para clasificarlas, miramos qué quiere hacer la persona que habla.</p>
         </div>
       </div>
 
-      <div class="emotion-grid">
-        <div class="emotion-card"><span>🙂</span><strong>Enunciativa</strong><p>Informa algo.</p><em>Hoy estudiamos.</em></div>
-        <div class="emotion-card"><span>🤔</span><strong>Interrogativa</strong><p>Pregunta algo.</p><em>¿Dónde está?</em></div>
-        <div class="emotion-card"><span>😲</span><strong>Exclamativa</strong><p>Expresa emoción.</p><em>¡Qué lindo!</em></div>
-        <div class="emotion-card"><span>👉</span><strong>Imperativa</strong><p>Da una orden o pedido.</p><em>Leé el texto.</em></div>
-        <div class="emotion-card"><span>☁️</span><strong>Dubitativa</strong><p>Expresa duda.</p><em>Tal vez llueva.</em></div>
-        <div class="emotion-card"><span>🌟</span><strong>Desiderativa</strong><p>Expresa deseo.</p><em>Ojalá gane.</em></div>
+      <div class="learn-grid">
+        <div class="image-card">
+          <img src="assets/oraciones.svg" alt="Ilustración de distintos tipos de oraciones" />
+          <button class="small-btn" onclick="toggleBox('ej-ora')">Ver qué muestra la imagen</button>
+          <div id="ej-ora" class="info-box hidden">
+            <p>🙂 Enunciativa: informa. 🤔 Interrogativa: pregunta. 😲 Exclamativa: emoción.</p>
+            <p>👉 Imperativa: orden o pedido. ☁️ Dubitativa: duda. 🌟 Desiderativa: deseo.</p>
+          </div>
+        </div>
+        <div class="text-card">
+          <div class="emotion-grid">
+            <div class="emotion-card"><span>🙂</span><strong>Enunciativa</strong><em>Hoy estudio Lengua.</em></div>
+            <div class="emotion-card"><span>🤔</span><strong>Interrogativa</strong><em>¿Dónde está mi cuaderno?</em></div>
+            <div class="emotion-card"><span>😲</span><strong>Exclamativa</strong><em>¡Qué linda historia!</em></div>
+            <div class="emotion-card"><span>👉</span><strong>Imperativa</strong><em>Leé en voz alta.</em></div>
+            <div class="emotion-card"><span>☁️</span><strong>Dubitativa</strong><em>Tal vez llueva.</em></div>
+            <div class="emotion-card"><span>🌟</span><strong>Desiderativa</strong><em>Ojalá me vaya muy bien.</em></div>
+          </div>
+        </div>
       </div>
 
       <div class="practice-box">
-        <h3>Detective de oraciones</h3>
-        <p>Elegí la clasificación correcta:</p>
-        <div class="choice-card" data-correct="Interrogativa">
-          <p><strong>Oración:</strong> ¿Trajiste el libro?</p>
-          <button onclick="checkChoice(this, 'Enunciativa')">Enunciativa</button>
-          <button onclick="checkChoice(this, 'Interrogativa')">Interrogativa</button>
-          <button onclick="checkChoice(this, 'Exclamativa')">Exclamativa</button>
-          <p class="feedback"></p>
+        <h3>Mini desafío</h3>
+        <p><strong>Oración:</strong> ¿Trajiste la cartuchera?</p>
+        <div class="game-buttons">
+          <button onclick="checkSingleAnswer('oracionFeedback','Probá otra vez. Fijate si informa o pregunta.', false)">Enunciativa</button>
+          <button onclick="checkSingleAnswer('oracionFeedback','¡Muy bien! Es interrogativa porque hace una pregunta.', true)">Interrogativa</button>
+          <button onclick="checkSingleAnswer('oracionFeedback','Casi. Acá no expresa emoción, está preguntando.', false)">Exclamativa</button>
         </div>
+        <p id="oracionFeedback" class="feedback big"></p>
       </div>
     </section>
 
-    <section id="leyenda" class="section purple">
-      <div class="section-title">
-        <span class="icon">🌙</span>
+    <section id="leyenda" class="section theme-purple">
+      <div class="section-heading">
+        <span class="emoji">🌙</span>
         <div>
           <h2>Estación 3: La leyenda</h2>
-          <p>Una leyenda mezcla realidad e imaginación para explicar el origen de algo.</p>
+          <p>La leyenda es un relato que mezcla realidad e imaginación y muchas veces explica el origen de algo.</p>
         </div>
       </div>
 
-      <div class="legend-scene">
-        <div class="moon">🌕</div>
-        <div class="tree">🌳</div>
-        <div class="river">〰️〰️〰️</div>
-        <div class="legend-text">Historias antiguas que viajan de boca en boca.</div>
-      </div>
-
-      <div class="check-list">
-        <p>✅ Puede explicar el origen de una planta, un animal, un lugar o una costumbre.</p>
-        <p>✅ Tiene elementos reales y elementos maravillosos.</p>
-        <p>✅ Suele transmitirse de generación en generación.</p>
-        <p>✅ Sus personajes pueden ser personas, animales o seres fantásticos.</p>
-      </div>
-
-      <div class="example-box">
-        <h3>Ejemplos para recordar</h3>
-        <p>La flor del ceibo, la yerba mate, el yaguareté o el pombero.</p>
+      <div class="learn-grid">
+        <div class="text-card">
+          <h3>Características</h3>
+          <div class="check-list compact">
+            <p>✅ Se transmite de generación en generación.</p>
+            <p>✅ Puede explicar el origen de una planta, animal o costumbre.</p>
+            <p>✅ Mezcla elementos reales y maravillosos.</p>
+            <p>✅ Puede tener personajes fantásticos.</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="assets/leyenda.svg" alt="Ilustración de una leyenda del ceibo" />
+          <button class="small-btn" onclick="toggleBox('ej-ley')">Ver ejemplo de leyenda</button>
+          <div id="ej-ley" class="info-box hidden">
+            <p><strong>Ejemplo:</strong> “La flor del ceibo”.</p>
+            <p>Es una leyenda porque explica el origen de una flor y mezcla imaginación con tradición.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="sustantivos" class="section green">
-      <div class="section-title">
-        <span class="icon">📦</span>
+    <section id="sustantivos" class="section theme-green">
+      <div class="section-heading">
+        <span class="emoji">📦</span>
         <div>
-          <h2>Estación 4: Sustantivos</h2>
-          <p>Los sustantivos son palabras que nombran personas, animales, lugares, objetos, ideas o sentimientos.</p>
+          <h2>Estación 4: Los sustantivos</h2>
+          <p>Son palabras que nombran personas, animales, lugares, objetos, ideas o sentimientos.</p>
         </div>
       </div>
 
-      <div class="word-bubbles">
-        <span>Lucía</span><span>perro</span><span>Corrientes</span><span>alegría</span><span>mesa</span><span>rebaño</span>
-      </div>
-
-      <div class="table-cards">
-        <article><h3>Comunes</h3><p>Nombran en general.</p><strong>escuela, ciudad, perro</strong></article>
-        <article><h3>Propios</h3><p>Nombran en particular y van con mayúscula.</p><strong>Martina, Corrientes</strong></article>
-        <article><h3>Concretos</h3><p>Se pueden ver, tocar, oír, oler o saborear.</p><strong>flor, libro, agua</strong></article>
-        <article><h3>Abstractos</h3><p>Nombran ideas o sentimientos.</p><strong>amor, paz, alegría</strong></article>
-        <article><h3>Individuales</h3><p>Nombran un solo ser u objeto.</p><strong>pez, árbol, oveja</strong></article>
-        <article><h3>Colectivos</h3><p>Nombran un conjunto.</p><strong>cardumen, arboleda, rebaño</strong></article>
+      <div class="learn-grid">
+        <div class="image-card">
+          <img src="assets/sustantivos.svg" alt="Ilustración con ejemplos de sustantivos" />
+          <button class="small-btn" onclick="toggleBox('ej-sus')">Ver ejemplos de la imagen</button>
+          <div id="ej-sus" class="info-box hidden">
+            <p><strong>Persona:</strong> Lucía. <strong>Lugar:</strong> Corrientes.</p>
+            <p><strong>Objeto:</strong> libro. <strong>Sentimiento:</strong> alegría.</p>
+          </div>
+        </div>
+        <div class="table-cards">
+          <article><h3>Comunes</h3><strong>perro, escuela</strong></article>
+          <article><h3>Propios</h3><strong>Sofía, Argentina</strong></article>
+          <article><h3>Concretos</h3><strong>mesa, flor</strong></article>
+          <article><h3>Abstractos</h3><strong>amor, paz</strong></article>
+          <article><h3>Individuales</h3><strong>oveja, árbol</strong></article>
+          <article><h3>Colectivos</h3><strong>rebaño, arboleda</strong></article>
+        </div>
       </div>
 
       <div class="two-columns">
-        <div class="mini-card"><h3>Género</h3><p>Masculino o femenino.</p><div class="visual-big">el gato / la gata</div></div>
-        <div class="mini-card"><h3>Número</h3><p>Singular o plural.</p><div class="visual-big">la flor / las flores</div></div>
+        <div class="mini-card"><h3>Género</h3><p>Masculino o femenino.</p><div class="big-emoji">el gato · la gata</div></div>
+        <div class="mini-card"><h3>Número</h3><p>Singular o plural.</p><div class="big-emoji">flor · flores</div></div>
       </div>
     </section>
 
-    <section id="adjetivos" class="section orange">
-      <div class="section-title">
-        <span class="icon">🎨</span>
+    <section id="adjetivos" class="section theme-orange">
+      <div class="section-heading">
+        <span class="emoji">🎨</span>
         <div>
-          <h2>Estación 5: Adjetivos</h2>
+          <h2>Estación 5: Los adjetivos</h2>
           <p>Los adjetivos acompañan al sustantivo y dicen cómo es o de dónde es.</p>
         </div>
       </div>
 
-      <div class="adjective-scene">
-        <div class="noun-card">mochila</div>
-        <div class="plus">+</div>
-        <div class="adj-card">roja</div>
-        <div class="equals">=</div>
-        <div class="result-card">mochila roja 🎒</div>
-      </div>
-
-      <div class="two-columns">
-        <article class="mini-card">
-          <h3>Calificativos</h3>
-          <p>Dicen una cualidad.</p>
-          <p><strong>Ejemplos:</strong> grande, alegre, suave, brillante.</p>
-        </article>
-        <article class="mini-card">
-          <h3>Gentilicios</h3>
-          <p>Dicen de dónde es alguien o algo.</p>
-          <p><strong>Ejemplos:</strong> argentina, correntino, chaqueña, brasileño.</p>
-        </article>
-      </div>
-
-      <div class="tip-box">
-        <h3>Regla importante</h3>
-        <p>El adjetivo acompaña al sustantivo en género y número.</p>
-        <p><strong>Ejemplo:</strong> las flores rojas.</p>
+      <div class="learn-grid">
+        <div class="text-card">
+          <div class="adjective-scene">
+            <div class="noun-card">mochila</div>
+            <div class="plus">+</div>
+            <div class="adj-card">roja</div>
+            <div class="equals">=</div>
+            <div class="result-card">mochila roja 🎒</div>
+          </div>
+          <div class="two-mini-grid">
+            <article class="mini-card"><h3>Calificativos</h3><p>Dicen una cualidad.</p><p><strong>Ejemplos:</strong> alegre, grande, suave.</p></article>
+            <article class="mini-card"><h3>Gentilicios</h3><p>Indican origen.</p><p><strong>Ejemplos:</strong> argentina, correntino.</p></article>
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="assets/adjetivos.svg" alt="Ilustración con ejemplos de adjetivos" />
+          <button class="small-btn" onclick="toggleBox('ej-adj')">Ver ejemplos de la imagen</button>
+          <div id="ej-adj" class="info-box hidden">
+            <p><strong>Calificativo:</strong> casa grande.</p>
+            <p><strong>Gentilicio:</strong> niña argentina.</p>
+            <p><strong>Recordá:</strong> el adjetivo debe concordar con el sustantivo: “flores rojas”.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="fabula" class="section blue">
-      <div class="section-title">
-        <span class="icon">🐢</span>
+    <section id="fabula" class="section theme-blue">
+      <div class="section-heading">
+        <span class="emoji">🐢</span>
         <div>
           <h2>Estación 6: La fábula</h2>
-          <p>La fábula es un relato breve que deja una enseñanza llamada moraleja.</p>
+          <p>Es un relato breve que deja una enseñanza llamada moraleja.</p>
         </div>
       </div>
 
-      <div class="fable-scene">
-        <div class="animal-card">🐢<span>Constancia</span></div>
-        <div class="animal-card">🦊<span>Astucia</span></div>
-        <div class="animal-card">🦁<span>Fuerza</span></div>
-      </div>
-
-      <div class="check-list">
-        <p>✅ Es breve.</p>
-        <p>✅ Muchas veces tiene animales que hablan o actúan como personas.</p>
-        <p>✅ Presenta una situación o problema.</p>
-        <p>✅ Termina con una enseñanza: la moraleja.</p>
+      <div class="learn-grid">
+        <div class="image-card">
+          <img src="assets/fabula.svg" alt="Ilustración de una fábula con una tortuga y una liebre" />
+          <button class="small-btn" onclick="toggleBox('ej-fab')">Ver ejemplo de fábula</button>
+          <div id="ej-fab" class="info-box hidden">
+            <p><strong>Ejemplo:</strong> la tortuga y la liebre.</p>
+            <p><strong>Moraleja:</strong> con constancia y esfuerzo se puede llegar muy lejos.</p>
+          </div>
+        </div>
+        <div class="text-card">
+          <div class="check-list compact">
+            <p>✅ Es breve.</p>
+            <p>✅ Suele tener animales que hablan o actúan como personas.</p>
+            <p>✅ Presenta una situación o problema.</p>
+            <p>✅ Termina con una enseñanza o moraleja.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="noticia" class="section yellow">
-      <div class="section-title">
-        <span class="icon">📰</span>
+    <section id="noticia" class="section theme-yellow">
+      <div class="section-heading">
+        <span class="emoji">📰</span>
         <div>
           <h2>Estación 7: La noticia</h2>
           <p>La noticia informa sobre un hecho real, actual y de interés.</p>
         </div>
       </div>
 
-      <article class="newspaper">
-        <div class="news-title">Alumnos de 4.º grado preparan una feria de lectura</div>
-        <div class="news-subtitle">La actividad se realizará el viernes en la escuela y participarán estudiantes y familias.</div>
-        <div class="news-image">📚👧👦📚</div>
-        <div class="caption">Imagen: chicos compartiendo libros.</div>
-        <p>
-          Los estudiantes de cuarto grado organizarán una feria de lectura para compartir cuentos,
-          leyendas y fábulas. La propuesta busca disfrutar de la lectura y aprender en grupo.
-        </p>
-      </article>
-
-      <div class="question-grid">
-        <div><strong>¿Qué pasó?</strong><p>Preparan una feria de lectura.</p></div>
-        <div><strong>¿Cuándo?</strong><p>El viernes.</p></div>
-        <div><strong>¿Dónde?</strong><p>En la escuela.</p></div>
-        <div><strong>¿Quiénes?</strong><p>Estudiantes y familias.</p></div>
+      <div class="learn-grid">
+        <div class="text-card newspaper">
+          <div class="news-title">La escuela prepara una feria de lectura</div>
+          <div class="news-subtitle">Participarán estudiantes y familias este viernes.</div>
+          <p>Los alumnos de 4.º grado compartirán cuentos, leyendas y fábulas en una jornada especial.</p>
+          <div class="news-questions">
+            <span>¿Qué pasó?</span><span>¿Cuándo?</span><span>¿Dónde?</span><span>¿Quiénes?</span>
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="assets/noticia.svg" alt="Ilustración de una noticia escolar" />
+          <button class="small-btn" onclick="toggleBox('ej-not')">Ver partes de la noticia</button>
+          <div id="ej-not" class="info-box hidden">
+            <p><strong>Partes:</strong> título, bajada o copete, cuerpo, imagen y epígrafe.</p>
+            <p>Una noticia responde: <strong>qué pasó, cuándo, dónde y quiénes participaron</strong>.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="juegos" class="section games">
-      <div class="section-title">
-        <span class="icon">⭐</span>
+      <div class="section-heading">
+        <span class="emoji">⭐</span>
         <div>
           <h2>Juegos para practicar</h2>
-          <p>Actividades cortas para repasar jugando. Tocá, elegí y comprobá.</p>
+          <p>Repasá jugando y comprobá lo que ya aprendiste.</p>
         </div>
       </div>
 
       <div class="game-card">
         <h3>Juego 1: Clasificá la palabra</h3>
-        <p>¿Qué tipo de sustantivo es la palabra?</p>
+        <p>¿Qué tipo de sustantivo es?</p>
         <div id="wordGame" class="word-game"></div>
         <div class="game-buttons">
           <button onclick="answerWordGame('propio')">Propio</button>
@@ -337,8 +345,8 @@
       </div>
 
       <div class="game-card">
-        <h3>Juego 3: Modo “me tomo la lección”</h3>
-        <p>Respondé en voz alta. Después tocá para ver una pista.</p>
+        <h3>Juego 3: Me tomo la lección</h3>
+        <p>Leé la pregunta y respondé en voz alta.</p>
         <button onclick="newFlashcard()">Nueva pregunta</button>
         <div class="flashcard" onclick="revealFlashcard()">
           <p id="flashQuestion">Tocá “Nueva pregunta”.</p>
@@ -348,25 +356,21 @@
     </section>
 
     <section class="section encouragement">
-      <div class="book-mascot small" aria-hidden="true">
-        <div class="book-face">📖</div>
-        <div class="sparkles">✨</div>
+      <div class="encouragement-wrap">
+        <img src="assets/mascota.svg" alt="Mascota libro con estrellas" class="mascot-small" />
+        <div>
+          <h2>Mensaje final</h2>
+          <p>Estudiaste un montón. Leíste, miraste ejemplos, jugaste y pensaste. Eso ya es un gran trabajo.</p>
+          <p>Si repasás con calma y confiás en vos, vas a poder responder cada consigna paso a paso.</p>
+          <p class="big-message">¡Vos podés! Andá tranquila, pensá bien y brillá en tu evaluación. 🌈📚⭐</p>
+          <a class="btn primary" href="#inicio">Volver al inicio</a>
+        </div>
       </div>
-      <h2>Mensaje final</h2>
-      <p>
-        Estudiar es como hacer un viaje: paso a paso se llega más lejos. Si algo no sale de una,
-        se vuelve a intentar con calma. Ya aprendiste muchas cosas importantes: leer, pensar,
-        clasificar, explicar y descubrir pistas en los textos.
-      </p>
-      <p class="big-message">
-        Con atención, práctica y confianza, ¡vas a poder hacer una hermosa evaluación! 🌈⭐
-      </p>
-      <a class="btn primary" href="#inicio">Volver al inicio</a>
     </section>
   </main>
 
   <footer>
-    <p>Guía de estudio elaborada para niñas de 4.º grado. Basada en el temario escolar de Lengua.</p>
+    <p>Guía de estudio pensada para niñas de 4.º grado. Inspirada en el temario escolar de Lengua.</p>
   </footer>
 
   <script src="script.js"></script>

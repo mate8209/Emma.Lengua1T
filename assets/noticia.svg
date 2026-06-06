@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+  <rect width="900" height="560" rx="30" fill="#FFFBEF"/>
+  <rect x="82" y="56" width="736" height="448" rx="28" fill="#FFFFFF" stroke="#E9E1C7"/>
+  <text x="120" y="106" font-size="30" font-family="Arial" font-weight="700" fill="#24324A">📰 NOTICIA</text>
+  <text x="120" y="156" font-size="38" font-family="Arial" font-weight="700" fill="#24324A">Feria de lectura en la escuela</text>
+  <rect x="120" y="182" width="660" height="56" rx="14" fill="#EFF6FF"/>
+  <text x="136" y="218" font-size="24" font-family="Arial" font-weight="700" fill="#4F8CFF">Este viernes participarán alumnos y familias.</text>
+  <rect x="120" y="262" width="250" height="168" rx="20" fill="#EAF3FF"/>
+  <text x="155" y="356" font-size="80">📚👧👦</text>
+  <text x="122" y="454" font-size="18" font-family="Arial" font-weight="700" fill="#64738A">Epígrafe: estudiantes en la feria.</text>
+  <g font-family="Arial" font-weight="700" fill="#24324A">
+    <text x="412" y="290" font-size="24">¿Qué pasó?</text>
+    <text x="412" y="324" font-size="22" fill="#4F8CFF">Se organiza una feria.</text>
+    <text x="412" y="370" font-size="24">¿Cuándo?</text>
+    <text x="412" y="404" font-size="22" fill="#4F8CFF">El viernes.</text>
+    <text x="412" y="450" font-size="24">¿Dónde y quiénes?</text>
+    <text x="412" y="484" font-size="22" fill="#4F8CFF">En la escuela, con alumnos y familias.</text>
+  </g>
+</svg>

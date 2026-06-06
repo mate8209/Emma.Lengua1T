@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+  <rect width="900" height="560" rx="30" fill="#F7FBFF"/>
+  <rect x="70" y="420" width="760" height="50" rx="25" fill="#D7EEFF"/>
+  <circle cx="210" cy="280" r="72" fill="#FFD7B8"/>
+  <path d="M150 270c8-68 120-68 128 0v105H150z" fill="#FF7CA8"/>
+  <circle cx="190" cy="270" r="8" fill="#24324A"/>
+  <circle cx="232" cy="270" r="8" fill="#24324A"/>
+  <path d="M193 298c10 9 28 9 38 0" stroke="#24324A" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <circle cx="690" cy="280" r="72" fill="#FFD7B8"/>
+  <path d="M630 270c8-68 120-68 128 0v105H630z" fill="#4F8CFF"/>
+  <circle cx="670" cy="270" r="8" fill="#24324A"/>
+  <circle cx="712" cy="270" r="8" fill="#24324A"/>
+  <path d="M673 298c10 9 28 9 38 0" stroke="#24324A" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <rect x="250" y="110" width="400" height="110" rx="32" fill="#FFF1B8"/>
+  <text x="290" y="165" font-size="34" font-family="Arial" font-weight="700" fill="#24324A">Mañana tengo</text>
+  <text x="335" y="205" font-size="34" font-family="Arial" font-weight="700" fill="#24324A">prueba de Lengua</text>
+  <path d="M286 220l-30 40 54-18" fill="#FFF1B8"/>
+  <path d="M330 320h240" stroke="#FF7CA8" stroke-width="12" stroke-linecap="round" stroke-dasharray="20 14"/>
+  <polygon points="586,320 552,300 552,340" fill="#FF7CA8"/>
+  <g font-family="Arial" font-weight="700" font-size="28" fill="#24324A">
+    <rect x="112" y="80" width="120" height="48" rx="18" fill="#FFFFFF" stroke="#FFD76C"/>
+    <text x="135" y="113">Emisor</text>
+    <rect x="633" y="80" width="140" height="48" rx="18" fill="#FFFFFF" stroke="#A9D4FF"/>
+    <text x="648" y="113">Receptor</text>
+    <rect x="360" y="370" width="150" height="48" rx="18" fill="#FFFFFF" stroke="#FFC5D8"/>
+    <text x="388" y="403">Mensaje</text>
+  </g>
+</svg>
