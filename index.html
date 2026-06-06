@@ -37,6 +37,7 @@
     <a href="#fabula">🐢 Fábula</a>
     <a href="#noticia">📰 Noticia</a>
     <a href="#juegos">⭐ Juegos</a>
+    <a href="#practica-extra">📝 Práctica extra</a>
   </nav>
 
   <main>
@@ -351,6 +352,123 @@
         <div class="flashcard" onclick="revealFlashcard()">
           <p id="flashQuestion">Tocá “Nueva pregunta”.</p>
           <p id="flashAnswer" class="hidden"></p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="practica-extra" class="section games">
+      <div class="section-heading">
+        <span class="emoji">📝</span>
+        <div>
+          <h2>Taller extra de práctica</h2>
+          <p>Acá hay más ejercicios para seguir practicando con distintos formatos. Hay algunos muy simples y otros un poquito más desafiantes.</p>
+        </div>
+      </div>
+
+      <div class="practice-columns">
+        <div class="game-card">
+          <h3>Sustantivos · Nivel 1</h3>
+          <p id="nounEasyPrompt" class="prompt"></p>
+          <div class="game-buttons">
+            <button onclick="answerNounEasy('comun')">Común</button>
+            <button onclick="answerNounEasy('propio')">Propio</button>
+          </div>
+          <p id="nounEasyFeedback" class="feedback big"></p>
+        </div>
+
+        <div class="game-card">
+          <h3>Sustantivos · Nivel 2</h3>
+          <p id="nounHardPrompt" class="prompt"></p>
+          <div class="game-buttons">
+            <button onclick="answerNounHard('concreto')">Concreto</button>
+            <button onclick="answerNounHard('abstracto')">Abstracto</button>
+            <button onclick="answerNounHard('individual')">Individual</button>
+            <button onclick="answerNounHard('colectivo')">Colectivo</button>
+          </div>
+          <p id="nounHardFeedback" class="feedback big"></p>
+        </div>
+      </div>
+
+      <div class="practice-columns">
+        <div class="game-card">
+          <h3>Tarjetas de sustantivos</h3>
+          <p>Leé la consigna y pensá la respuesta. Después comprobala.</p>
+          <button onclick="newNounCard()">Nueva consigna</button>
+          <div class="flashcard" onclick="revealNounCard()">
+            <p id="nounCardQuestion">Tocá “Nueva consigna”.</p>
+            <p id="nounCardAnswer" class="hidden"></p>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <h3>Adjetivos · Tipo de adjetivo</h3>
+          <p id="adjTypePrompt" class="prompt"></p>
+          <div class="game-buttons">
+            <button onclick="answerAdjType('calificativo')">Calificativo</button>
+            <button onclick="answerAdjType('gentilicio')">Gentilicio</button>
+          </div>
+          <p id="adjTypeFeedback" class="feedback big"></p>
+        </div>
+      </div>
+
+      <div class="practice-columns">
+        <div class="game-card">
+          <h3>Adjetivos · Concordancia</h3>
+          <p id="adjAgreePrompt" class="prompt"></p>
+          <div class="game-buttons three-lines">
+            <button id="adjAgreeOpt1" onclick="answerAdjAgree(0)">Opción 1</button>
+            <button id="adjAgreeOpt2" onclick="answerAdjAgree(1)">Opción 2</button>
+            <button id="adjAgreeOpt3" onclick="answerAdjAgree(2)">Opción 3</button>
+          </div>
+          <p id="adjAgreeFeedback" class="feedback big"></p>
+        </div>
+
+        <div class="game-card">
+          <h3>Adjetivos · Descubrí la palabra</h3>
+          <p>Leé la oración y pensá cuál es el adjetivo.</p>
+          <button onclick="newAdjCard()">Nueva oración</button>
+          <div class="flashcard" onclick="revealAdjCard()">
+            <p id="adjCardQuestion">Tocá “Nueva oración”.</p>
+            <p id="adjCardAnswer" class="hidden"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="practice-columns">
+        <div class="game-card">
+          <h3>Actitud del hablante · Nivel 1</h3>
+          <p id="speakerEasyPrompt" class="prompt"></p>
+          <div class="game-buttons">
+            <button onclick="answerSpeakerEasy('enunciativa')">Enunciativa</button>
+            <button onclick="answerSpeakerEasy('interrogativa')">Interrogativa</button>
+            <button onclick="answerSpeakerEasy('exclamativa')">Exclamativa</button>
+            <button onclick="answerSpeakerEasy('imperativa')">Imperativa</button>
+          </div>
+          <p id="speakerEasyFeedback" class="feedback big"></p>
+        </div>
+
+        <div class="game-card">
+          <h3>Actitud del hablante · Nivel 2</h3>
+          <p id="speakerHardPrompt" class="prompt"></p>
+          <div class="game-buttons">
+            <button onclick="answerSpeakerHard('dubitativa')">Dubitativa</button>
+            <button onclick="answerSpeakerHard('desiderativa')">Desiderativa</button>
+            <button onclick="answerSpeakerHard('enunciativa')">Enunciativa</button>
+          </div>
+          <p id="speakerHardFeedback" class="feedback big"></p>
+        </div>
+      </div>
+
+      <div class="practice-columns single">
+        <div class="game-card">
+          <h3>¿Qué quiso hacer quien habla?</h3>
+          <p>Leé la oración, pensá la intención y después comprobá.</p>
+          <button onclick="newSpeakerCard()">Nueva tarjeta</button>
+          <div class="flashcard" onclick="revealSpeakerCard()">
+            <p id="speakerCardQuestion">Tocá “Nueva tarjeta”.</p>
+            <p id="speakerCardAnswer" class="hidden"></p>
+          </div>
         </div>
       </div>
     </section>

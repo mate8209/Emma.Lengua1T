@@ -232,3 +232,9 @@ footer { text-align:center; padding: 28px 18px 40px; color: var(--muted); }
   .sticky-nav { padding: 10px; }
   .section-heading { align-items: center; }
 }
+
+
+.practice-columns { display:grid; grid-template-columns: 1fr 1fr; gap:18px; margin-top:18px; }
+.practice-columns.single { grid-template-columns: 1fr; }
+.three-lines button { flex: 1 1 100%; text-align:left; }
+@media (max-width: 720px) { .practice-columns { grid-template-columns: 1fr; } }
